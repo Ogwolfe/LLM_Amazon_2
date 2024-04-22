@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Online Chocolate Company</title>
+<style>
+  body {
+  font-family: Arial, sans-serif;
+  background: url('chocolate_background.jpg');
+  background-size: cover;
+  padding: 20px;
+  margin: 0;
+}
+
+header {
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul ul {
+  display: none;
+  position: absolute;
+}
+
+nav ul li:hover > ul {
+  display: block;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.product {
+  margin-bottom: 20px;
+}
+
+.form {
+  background: #f9f9f9;
+  padding: 20px;
+}
+
+footer {
+  text-align: center;
+  background: #333;
+  color: white;
+  padding: 10px;
+}
+
+</style>
+</head>
+<body>
+<header>
+  <h1>Online Chocolate Company</h1>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Products</a>
+        <ul>
+          <li><a href="#">Chocolate Bars</a></li>
+          <li><a href="#">Chocolate Candies</a></li>
+        </ul>
+      </li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section class="product">
+    <h2>Our Products</h2>
+    <div class="image">
+      <img src="chocolate_bar.jpg" alt="Chocolate Bar">
+    </div>
+    <p>We offer a variety of delicious chocolates including rich chocolate bars and delightful candies.</p>
+  </section>
+  <section class="form">
+    <h2>Contact Us</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" aria-label="Name">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" aria-label="Email">
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" aria-label="Message"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+</main>
+<footer>
+  <p>&copy; 2023 Online Chocolate Company. All rights reserved.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
